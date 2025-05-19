@@ -62,31 +62,33 @@ h6 {
 /* css bones stolen from ayu @ sweetfish.site */
 /* COLORS */
 
+/* light mode */
 * {
   --foreground: #4d4747;
   --background: #ecf7fd;
   --highlight: #e4e2e2;
-  --alt: #d4c8da;
+  --alt: #b2a9a9;
   --accent: #c70071;
   --accent-highlight: #f1dfed;
   --link: #0000d1;
   --link-highlight: #dddff3;
-  --background-image: url("../resources/images/texture.png");
+  --background-image: url("../resources/images/bg.png");
 }
 
-/* TODO add dark theme */
-/*@media (prefers-color-scheme: dark) {
+/* dark mode */
+@media (prefers-color-scheme: dark) {
   * {
-    --text: #DADADB;
-    --bg1: #444;
-    --bg2: #333;
-    --h1-bg: #272727;
-    --h1-text: #DADADB;
-    --border: #000;
-    --link: #DADADB;
-    --underline: #888;
+    --foreground: #ecf7fd;
+    --background: #4d4747;
+    --highlight: #6d6a6b;
+    --alt: #b2a9a9;
+    --accent: #ffa6dc;
+    --accent-highlight: #704359;
+    --link: #c2ccff;
+    --link-highlight: #4b4b8b;
+    --background-image: url("../resources/images/bg_dark.png");
   }
-}*/
+}
 
 /* FONT IMPORT */
 
@@ -127,18 +129,6 @@ h6 {
   font-style: italic;
 }
 
-/*@font-face {
-  font-family: 'sysfont';
-  src: url("https://sweetfish.site/utility/fonts/sysfont.woff2");
-}
-
-@font-face {
-  font-family: 'domitian';
-  src: url("/utility/fonts/Domitian-BoldItalic.otf");
-  font-weight: bold;
-  font-style: italic;
-}*/
-
 /* BASIC STRUCTURE */
 
 main {
@@ -175,8 +165,13 @@ body {
 
 #front-image {
   height: 100%;
-  /*  width: 100%;*/
   object-fit: cover;
+  background-image: var(--front-image);
+}
+
+#theme-switch p {
+  font-size: 1.3rem;
+  margin-right: .25rem;
 }
 
 /* BASIC TEXT STYLING */
@@ -190,17 +185,19 @@ a {
   text-decoration-color: var(--link);
   color: var(--link);
   background-color: var(--link-highlight);
+  font-weight: bold;
 }
 
 a:hover {
   text-decoration: underline;
-  text-decoration-color: var(--highlight);
+  text-decoration-color: var(--alt);
   cursor: pointer;
 }
 
 mark {
   color: var(--foreground);
   background-color: var(--highlight);
+  font-weight: bold;
 }
 
 .no-underline {
@@ -235,7 +232,7 @@ h1 {
 .big-header h1 {
   margin: -.55rem -1.55rem -.55rem -.8rem;
   border: 0px;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   flex-grow: 0;
 }
 
