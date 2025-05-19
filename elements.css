@@ -1,0 +1,25 @@
+.site-box {
+  background-image: url(https://frufrock.nekoweb.org/resources/sitebox.png);
+  background-repeat: no-repeat;
+  color: #D2F1E4;
+  border: 1px solid #48304D;
+  font-family: Monospace;
+  image-rendering: pixelated;
+}
+
+.site-box>a>p {
+  right: -45%;
+  bottom: 35%;
+  color: #D2F1E4;
+  transform: rotate(-60deg);
+  width: 180px;
+  font-size: 14px;
+}
+
+.site-box>a>span {
+  display: none;
+}
+
+.site-box .sitefeature {
+  opacity: 0;
+}
