@@ -313,6 +313,8 @@ a h3 {
   background: var(--background);
   border: var(--border-style);
   filter: var(--drop-shadow-style);
+  /* safari gpu render hack for wonky drop shadows */
+  backdrop-filter: blur(0);
 }
 
 .box-alone {
