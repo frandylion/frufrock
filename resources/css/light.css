@@ -1,0 +1,26 @@
+/* light mode */
+* {
+  --foreground: #4d4747;
+  --background: #ecf7fd;
+  --highlight: #e4e2e2;
+  --alt: #b2a9a9;
+  --accent: #c70071;
+  --accent-highlight: #f1dfed;
+  --link: #0000d1;
+  --link-highlight: #dddff3;
+  --background-image: url("../images/bg.png");
+}
+
+@media (prefers-color-scheme: dark) {
+  * {
+    --foreground: #4d4747;
+    --background: #ecf7fd;
+    --highlight: #e4e2e2;
+    --alt: #b2a9a9;
+    --accent: #c70071;
+    --accent-highlight: #f1dfed;
+    --link: #0000d1;
+    --link-highlight: #dddff3;
+    --background-image: url("../images/bg.png");
+  }
+}

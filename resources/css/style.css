@@ -72,7 +72,7 @@ h6 {
   --accent-highlight: #f1dfed;
   --link: #0000d1;
   --link-highlight: #dddff3;
-  --background-image: url("../resources/images/bg.png");
+  --background-image: url("../images/bg.png");
 }
 
 /* dark mode */
@@ -82,11 +82,11 @@ h6 {
     --background: #4d4747;
     --highlight: #6d6a6b;
     --alt: #b2a9a9;
-    --accent: #ffb8e0;
+    --accent: #ffd6eb;
     --accent-highlight: #704359;
     --link: #e0e8ff;
     --link-highlight: #4b4b8b;
-    --background-image: url("../resources/images/bg_dark.png");
+    --background-image: url("../images/bg_dark.png");
   }
 }
 
@@ -107,24 +107,24 @@ h6 {
 
 @font-face {
   font-family: 'drafting_mono';
-  src: url("../resources/fonts/DraftingMono-Regular.woff2");
+  src: url("../fonts/DraftingMono-Regular.woff2");
 }
 
 @font-face {
   font-family: 'drafting_mono';
-  src: url("../resources/fonts/DraftingMono-Bold.woff2");
+  src: url("../fonts/DraftingMono-Bold.woff2");
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'drafting_mono';
-  src: url("../resources/fonts/DraftingMono-Italic.woff2");
+  src: url("../fonts/DraftingMono-Italic.woff2");
   font-style: italic;
 }
 
 @font-face {
   font-family: 'drafting_mono';
-  src: url("../resources/fonts/DraftingMono-BoldItalic.woff2");
+  src: url("../fonts/DraftingMono-BoldItalic.woff2");
   font-weight: bold;
   font-style: italic;
 }
@@ -141,7 +141,7 @@ body {
   position: relative;
   margin: 0 auto;
   font-size: 17px;
-  font-family: var(--body), system-ui, sans-serif;
+  font-family: var(--body), ui-monospace, monospace;
   line-height: 1.4;
   color: var(--foreground);
   background: var(--background);
@@ -164,14 +164,18 @@ body {
 }
 
 #front-image {
-  height: 100%;
+  /* weird safari bs wants min-height instead of height */
+  min-height: 100%;
   object-fit: cover;
-  background-image: var(--front-image);
 }
 
-#theme-switch p {
-  font-size: 1.3rem;
-  margin-right: .25rem;
+#theme-switch button {
+  font-size: 1.65rem;
+  background: var(--background);
+  color: var(--foreground);
+  border: none;
+  cursor: pointer;
+  margin: -.55rem 0 -.55rem auto;
 }
 
 /* BASIC TEXT STYLING */
@@ -213,7 +217,7 @@ mark {
 }
 
 h1 {
-  font-family: var(--header);
+  font-family: var(--header), ui-monospace, monospace;
   font-size: 1.5rem;
   letter-spacing: var(--h1-letter-spacing);
   font-weight: var(--h1-weight);
@@ -362,6 +366,11 @@ a h3 {
 
   #front-image {
     width: 100%;
+    height: 100%;
+  }
+
+  #theme-switch button {
+    font-size: 1.9rem;
   }
 }
 

@@ -2,30 +2,34 @@
 <html lang='en'>
 
 <head>
-  <meta charset='UTF-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>frufrock @ 404</title>
-  <link rel='stylesheet' href='style.css'>
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link id="theme" rel="stylesheet" href="resources/css/style.css" type="text/css" media="all">
+  <script src="resources/js/switch_theme.js"></script>
 </head>
 
 <body>
   <main>
     <div id="main">
-      <div class="box flex" style="align-items: end;">
+      <div class="box flex" style="align-items: end; justify-content: space-between;">
         <div class="big-header">
           <h1><mark>page not found</mark></h1>
         </div>
-        <div class="big-subheader">
-          <p>go <a href="https://frufrock.nekoweb.org/">home</a> or do whatever i guess.</p>
-        </div>
-        <div id="theme-switch">
-          <p>◑</p>
+        <div class="flex flex-no-wrap" style="justify-content:space-between; align-items: end;">
+          <div class="big-subheader">
+            <p>go <a href="https://frufrock.nekoweb.org/">home</a> or do whatever you want i guess.</p>
+          </div>
+          <div id="theme-switch">
+            <button onclick="switch_theme()">◨</button>
+          </div>
         </div>
       </div>
       <div class="box">
         <h1><mark>what did you do?</mark></h1>
-        <p>you tried to go somewhere that doesn't exist. that's ok though.</p>
+        <p>you tried to go somewhere that doesn't exist. that's ok though, it happens to me a lot. just try your best in the future!</p>
       </div>
     </div>
   </main>

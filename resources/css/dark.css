@@ -1,0 +1,26 @@
+/* dark mode */
+* {
+  --foreground: #ecf7fd;
+  --background: #4d4747;
+  --highlight: #6d6a6b;
+  --alt: #b2a9a9;
+  --accent: #ffd6eb;
+  --accent-highlight: #704359;
+  --link: #e0e8ff;
+  --link-highlight: #4b4b8b;
+  --background-image: url("../images/bg_dark.png");
+}
+
+@media (prefers-color-scheme: dark) {
+  * {
+    --foreground: #ecf7fd;
+    --background: #4d4747;
+    --highlight: #6d6a6b;
+    --alt: #b2a9a9;
+    --accent: #ffd6eb;
+    --accent-highlight: #704359;
+    --link: #e0e8ff;
+    --link-highlight: #4b4b8b;
+    --background-image: url("../images/bg_dark.png");
+  }
+}

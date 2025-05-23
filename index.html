@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
 <head>
-  <meta charset='UTF-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>frufrock @ home</title>
-  <link rel='stylesheet' href='style.css'>
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link id="theme" rel="stylesheet" href="resources/css/style.css" type="text/css" media="all">
+  <script src="resources/js/switch_theme.js"></script>
 </head>
 
 <body>
@@ -16,11 +18,13 @@
         <div class="big-header">
           <h1><mark>frufrock</mark></h1>
         </div>
-        <div class="big-subheader">
-          <p>this is some kind of <a href="https://en.wikipedia.org/wiki/Website">website</a>.</p>
-        </div>
-        <div id="theme-switch">
-          <p>◨</p>
+        <div class="flex flex-no-wrap" style="justify-content:space-between; align-items: end;">
+          <div class="big-subheader">
+            <p>this is some kind of <a href="https://en.wikipedia.org/wiki/Website">website</a>.</p>
+          </div>
+          <div id="theme-switch">
+            <button onclick="switch_theme()">◨</button>
+          </div>
         </div>
       </div>
       <div class="flex flex-unequal">
@@ -54,7 +58,7 @@
       </div>
       <div class="box">
         <!-- blurb -->
-        <p>one day i'll write a <mark>real blurb</mark> to go here, but for now we have this one. this is my home-page. it's the only one at the moment. a lot of inspiration (and code) was taken from ayu's beautiful <a href="https://sweetfish.site/">sweetfish.site</a> and the <a href="https://github.com/wavebeem/sublime-theme-foggy-morning">foggy morning</a> sublime text color scheme by wavebeem. thanks for visiting :3</p>
+        <p>one day i'll write a <mark>real blurb</mark> to go here, but for now we have this one. this is my home-page. it's the only one at the moment, so please take care of it. a lot of inspiration (and code) was taken from ayu's beautiful <a href="https://sweetfish.site/">sweetfish.site</a> and the <a href="https://github.com/wavebeem/sublime-theme-foggy-morning">foggy morning</a> sublime text color scheme by wavebeem. thanks for visiting :3</p>
       </div>
       <div class="box">
         <h1><mark>contact her/them</mark></h1>
